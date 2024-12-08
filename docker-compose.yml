@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: flaskapp
+      POSTGRES_USER: flaskuser
+      POSTGRES_PASSWORD: securepassword
+    ports:
+      - "5432:5432"  # Expose the port for the Flask app to connect
+    volumes:
+      - ./db_data:/var/lib/postgresql/data

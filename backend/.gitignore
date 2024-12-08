@@ -1,0 +1,6 @@
+venv
+dataset
+x86_venv
+yolo*
+.env
+__pycache__
